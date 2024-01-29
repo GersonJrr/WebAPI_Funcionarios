@@ -168,6 +168,12 @@ namespace WebAPI_Funcionarios.Service.FuncionarioService
             return serviceResponse;
         }
 
+        public ApplicationDbContext Get_context()
+        {
+            return _context;
+        }
+
+
         public async Task<ServiceResponse<List<FuncionarioModel>>> UpdateFuncionario(FuncionarioModel editadoFuncionario)
         {
             ServiceResponse<List<FuncionarioModel>> serviceResponse = new ServiceResponse<List<FuncionarioModel>>();

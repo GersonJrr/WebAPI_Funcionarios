@@ -8,8 +8,7 @@ namespace WebAPI_Funcionarios.Migrations
     /// <inheritdoc />
     public partial class firstmigration : Migration
     {
-        //para criar esta tabela somente digitar add-migration nome-migration
-        //para criar a tabla no banco de dados digite no console update-database
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -19,7 +18,6 @@ namespace WebAPI_Funcionarios.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Sobrenome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Departamento = table.Column<int>(type: "int", nullable: false),
                     Ativo = table.Column<bool>(type: "bit", nullable: false),
                     Turno = table.Column<int>(type: "int", nullable: false),

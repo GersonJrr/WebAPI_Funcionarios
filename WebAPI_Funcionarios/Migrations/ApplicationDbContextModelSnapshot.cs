@@ -46,10 +46,6 @@ namespace WebAPI_Funcionarios.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sobrenome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("Turno")
                         .HasColumnType("int");
 

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj": {}
+    "C:\\Users\\junio\\OneDrive\\Área de Trabalho\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj": {
+    "C:\\Users\\junio\\OneDrive\\Área de Trabalho\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj",
+        "projectUniqueName": "C:\\Users\\junio\\OneDrive\\Área de Trabalho\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj",
         "projectName": "WebAPI_Funcionarios",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\obj\\",
+        "projectPath": "C:\\Users\\junio\\OneDrive\\Área de Trabalho\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\WebAPI_Funcionarios.csproj",
+        "packagesPath": "C:\\Users\\junio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\junio\\OneDrive\\Área de Trabalho\\WebAPI_Funcionarios\\WebAPI_Funcionarios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

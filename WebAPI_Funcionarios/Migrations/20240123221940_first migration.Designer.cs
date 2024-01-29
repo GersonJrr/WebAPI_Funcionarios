@@ -12,8 +12,8 @@ using WebAPI_Funcionarios.DataContext;
 namespace WebAPI_Funcionarios.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240119003218_teste")]
-    partial class teste
+    [Migration("20240123221940_first migration")]
+    partial class firstmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,10 +46,6 @@ namespace WebAPI_Funcionarios.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Sobrenome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

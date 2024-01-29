@@ -16,13 +16,13 @@ namespace WebAPI_Funcionarios.Controllers
             _funcionarioInterface = funcionarioInterface;
         }
 
-        [HttpGet("GetAll")]
+        [HttpGet]
         public async Task<ActionResult<ServiceResponse<List<FuncionarioModel>>>> GetFuncionarios()
         {
             return Ok(await _funcionarioInterface.GetFuncionarios());
         }
 
-        [HttpGet("GetBy/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<ServiceResponse<FuncionarioModel>>> GetFuncionarioById(int id)
         {
             ServiceResponse<FuncionarioModel> serviceResponse = await _funcionarioInterface.GetFuncionarioById(id);
@@ -30,13 +30,13 @@ namespace WebAPI_Funcionarios.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPost("Create")]
+        [HttpPost]
         public async Task<ActionResult<ServiceResponse<List<FuncionarioModel>>>> CreateFuncionario(FuncionarioModel novoFuncionario)
         {
             return Ok(await _funcionarioInterface.CreateFuncionario(novoFuncionario));
         }
 
-        [HttpPut("Update")]
+        [HttpPut]
         public async Task<ActionResult<ServiceResponse<List<FuncionarioModel>>>> UpdateFuncionario(FuncionarioModel editadoFuncionario)
         {
             ServiceResponse<List<FuncionarioModel>> serviceResponse = await _funcionarioInterface.UpdateFuncionario(editadoFuncionario);
@@ -45,7 +45,7 @@ namespace WebAPI_Funcionarios.Controllers
         }
 
 
-        [HttpPut("FuncionarioInativo")]
+        [HttpPut("inativaFuncionario")]
         public async Task<ActionResult<ServiceResponse<List<FuncionarioModel>>>> FuncionarioInativo(int id)
         {
             ServiceResponse<List<FuncionarioModel>> serviceResponse = await _funcionarioInterface.FuncionarioInativo(id);
@@ -54,7 +54,7 @@ namespace WebAPI_Funcionarios.Controllers
 
         }
 
-        [HttpDelete("DeletFuncionario")]
+        [HttpDelete]
         public async Task<ActionResult<ServiceResponse<List<FuncionarioModel>>>> DeleteFuncionario(int id)
         {
             ServiceResponse<List<FuncionarioModel>> serviceResponse = await _funcionarioInterface.DeleteFuncionario(id);
