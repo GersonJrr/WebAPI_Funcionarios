@@ -12,8 +12,8 @@ using WebAPI_Funcionarios.DataContext;
 namespace WebAPI_Funcionarios.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240123221940_first migration")]
-    partial class firstmigration
+    [Migration("20240201235015_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,10 @@ namespace WebAPI_Funcionarios.Migrations
 
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
+
+                    b.Property<string>("CPF")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DataDeAlteracao")
                         .HasColumnType("datetime2");

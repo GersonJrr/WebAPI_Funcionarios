@@ -33,6 +33,10 @@ namespace WebAPI_Funcionarios.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
+                    b.Property<string>("CPF")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("DataDeAlteracao")
                         .HasColumnType("datetime2");
 

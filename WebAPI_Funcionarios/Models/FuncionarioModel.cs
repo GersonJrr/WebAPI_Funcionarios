@@ -9,6 +9,7 @@ namespace WebAPI_Funcionarios.Models
         [Key] // informa que o id é chave primaria
         public int Id { get; set; }
         public string Nome { get; set; }
+        public string cpf { get;set; }
         public DepartamentoEnum Departamento { get; set;}
         public bool Ativo {  get; set;}
         public TurnoEnum Turno { get; set;}
